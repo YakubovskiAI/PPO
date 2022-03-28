@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LR3_Calculator.MainPage">
+
+    <Grid BackgroundColor="#24252a">
+        <Grid Grid.Row="0" Margin="0,0,0,100">
+            <StackLayout Orientation="Vertical" HorizontalOptions="EndAndExpand" Margin="20,0" VerticalOptions="EndAndExpand">
+                <Label x:Name="Label_top" FontSize="Large" TextColor="#2abb9b"></Label>
+                <Label x:Name="Label_bot" TextColor="White" HorizontalOptions="EndAndExpand" FontSize="48"></Label>
+            </StackLayout>
+        </Grid>
+        <Grid Grid.Row="1" Margin="0,-100,0,0">
+            <StackLayout Orientation="Vertical" Margin="20">
+                <StackLayout VerticalOptions="FillAndExpand" Orientation="Horizontal">
+                    <Button x:Name="Button_clear" Text="C" TextColor="White" BackgroundColor="#2b2c31" WidthRequest="50" HeightRequest="50" FontSize="Title" HorizontalOptions="FillAndExpand"></Button>
+                    <Button x:Name="Button_open" Text="(" TextColor="White" BackgroundColor="#2b2c31" WidthRequest="50" HeightRequest="50" FontSize="Title" HorizontalOptions="FillAndExpand"></Button>
+                    <Button x:Name="Button_close" Text=")" TextColor="White" BackgroundColor="#2b2c31" WidthRequest="50" HeightRequest="50" FontSize="Title" HorizontalOptions="FillAndExpand"></Button>
+                    <Button x:Name="Button_erase" Text="⌫" TextColor="White" BackgroundColor="#2b2c31" WidthRequest="50" HeightRequest="50" FontSize="Title" HorizontalOptions="FillAndExpand"></Button>
+                </StackLayout>
+
+                <StackLayout VerticalOptions="FillAndExpand" Orientation="Horizontal">
+                    <Button x:Name="Button_1" Text="1" TextColor="White" BackgroundColor="#2b2c31" WidthRequest="50" HeightRequest="50" FontSize="Title" HorizontalOptions="FillAndExpand"></Button>
+                    <Button x:Name="Button_2" Text="2" TextColor="White" BackgroundColor="#2b2c31" WidthRequest="50" HeightRequest="50" FontSize="Title" HorizontalOptions="FillAndExpand"></Button>
+                    <Button x:Name="Button_3" Text="3" TextColor="White" BackgroundColor="#2b2c31" WidthRequest="50" HeightRequest="50" FontSize="Title" HorizontalOptions="FillAndExpand"></Button>
+                    <Button x:Name="Button_div" Text="/" TextColor="White" BackgroundColor="#2abb9b" WidthRequest="50" HeightRequest="50" FontSize="Title" HorizontalOptions="FillAndExpand"></Button>
+                </StackLayout>
+
+                <StackLayout VerticalOptions="FillAndExpand" Orientation="Horizontal">
+                    <Button x:Name="Button_4" Text="4" TextColor="White" BackgroundColor="#2b2c31" WidthRequest="50" HeightRequest="50" FontSize="Title" HorizontalOptions="FillAndExpand"></Button>
+                    <Button x:Name="Button_5" Text="5" TextColor="White" BackgroundColor="#2b2c31" WidthRequest="50" HeightRequest="50" FontSize="Title" HorizontalOptions="FillAndExpand"></Button>
+                    <Button x:Name="Button_6" Text="6" TextColor="White" BackgroundColor="#2b2c31" WidthRequest="50" HeightRequest="50" FontSize="Title" HorizontalOptions="FillAndExpand"></Button>
+                    <Button x:Name="Button_mul" Text="*" TextColor="White" BackgroundColor="#2abb9b" WidthRequest="50" HeightRequest="50" FontSize="Title" HorizontalOptions="FillAndExpand"></Button>
+                </StackLayout>
+
+                <StackLayout VerticalOptions="FillAndExpand" Orientation="Horizontal">
+                    <Button x:Name="Button_7" Text="7" TextColor="White" BackgroundColor="#2b2c31" WidthRequest="50" HeightRequest="50" FontSize="Title" HorizontalOptions="FillAndExpand"></Button>
+                    <Button x:Name="Button_8" Text="8" TextColor="White" BackgroundColor="#2b2c31" WidthRequest="50" HeightRequest="50" FontSize="Title" HorizontalOptions="FillAndExpand"></Button>
+                    <Button x:Name="Button_9" Text="9" TextColor="White" BackgroundColor="#2b2c31" WidthRequest="50" HeightRequest="50" FontSize="Title" HorizontalOptions="FillAndExpand"></Button>
+                    <Button x:Name="Button_sub" Text="-" TextColor="White" BackgroundColor="#2abb9b" WidthRequest="50" HeightRequest="50" FontSize="Title" HorizontalOptions="FillAndExpand"></Button>
+                </StackLayout>
+
+                <StackLayout VerticalOptions="FillAndExpand" Orientation="Horizontal">
+                    <Button x:Name="Button_0" Text="0" TextColor="White" BackgroundColor="#2b2c31" WidthRequest="50" HeightRequest="50" FontSize="Title" HorizontalOptions="FillAndExpand"></Button>
+                    <Button x:Name="Button_com" Text="," TextColor="White" BackgroundColor="#2b2c31" WidthRequest="50" HeightRequest="50" FontSize="Title" HorizontalOptions="FillAndExpand"></Button>
+                    <Button x:Name="Button_eq" Text="=" TextColor="White" BackgroundColor="#2abb9b" WidthRequest="50" HeightRequest="50" FontSize="Title" HorizontalOptions="FillAndExpand"></Button>
+                    <Button x:Name="Button_add" Text="+" TextColor="White" BackgroundColor="#2abb9b" WidthRequest="50" HeightRequest="50" FontSize="Title" HorizontalOptions="FillAndExpand"></Button>
+                </StackLayout>
+            </StackLayout>
+        </Grid>
+    </Grid>
+
+</ContentPage>
