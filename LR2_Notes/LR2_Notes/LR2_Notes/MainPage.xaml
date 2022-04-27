@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LR2_Notes.MainPage">
+
+    <StackLayout Margin="20,35,20,20">
+        <DatePicker x:Name="dataPicker"/>
+        <TimePicker x:Name="timePicker"/>
+        <Entry x:Name="descriptionEntry"
+               Placeholder="Enter description"/>
+        <Button Text="Add to Database"
+                Clicked="Add_Button_Clicked"/>
+        <Button Text="Update Database"
+                Clicked="Update_Button_Clicked"/>
+        <Button Text="Delete from Database"
+                Clicked="Delete_Button_Clicked"/>
+        <CollectionView x:Name="collectionView" SelectionMode="Single"
+                        SelectionChanged="collectionView_SelectionChanged">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout>
+                        <Label Text="{Binding Date}"
+                               FontSize="Medium"/>
+                        <Label Text="{Binding Time}"
+                               FontSize="Medium"/>
+                        <Label Text="{Binding Description}"
+                               FontSize="Small"/>
+                    </StackLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </StackLayout>
+
+</ContentPage>
